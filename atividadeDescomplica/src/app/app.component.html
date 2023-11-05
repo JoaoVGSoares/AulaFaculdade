@@ -1,0 +1,47 @@
+<h1>Aplicação</h1>
+<app-header />
+<br>
+<div>
+  <h3>Menu</h3>
+  <a [routerLink]="['user']">Usuários</a>
+  <br>
+  <a [routerLink]="['user', 100]">Usuário id = 100</a>
+  <br>
+  <a [routerLink]="['product']">Produtos</a>
+  <br>
+  <a [routerLink]="['product', 100]">Produto id = 100</a>
+</div>
+<h3>Main content</h3>
+<router-outlet></router-outlet>
+
+<!-- <div *ngIf="clientePremium; else naopremium">
+  <h4>Você é um cliente premium tem acesso a informações diferenciadas</h4>
+</div>
+
+<ng-template #naopremium>
+  <h4>Não é um cliente premium.</h4>
+</ng-template> -->
+
+<!-- <ul>
+  <li>Item 1 - {{descricao1}}</li>
+  <li>Item 2</li>
+</ul>
+
+<h3>Lista</h3>
+<ul *ngFor="let valor of valores">
+  <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
+</ul>
+
+
+
+<h3>Form</h3>
+<label>Digite o nome</label>
+<input [(ngModel)]="valor.nome"/>
+<br>
+<label>Digite a descrição</label>
+<input [(ngModel)]="valor.descricao"/>
+<br>
+<label>Digite o id</label>
+<input [(ngModel)]="valor.id"/>
+<br>
+<button (click)="adicionar()">Adicionar item</button> -->
